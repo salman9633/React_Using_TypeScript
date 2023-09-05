@@ -2,6 +2,6 @@ sample_tsx/node_modules
 sample_tsx/.eslintrc.cjs
 sample_tsx/vite.config.ts
 
-app/node_modules
-app/.eslintrc.cjs
-app/vite.config.ts
+# app/node_modules
+# app/.eslintrc.cjs
+# app/vite.config.ts
