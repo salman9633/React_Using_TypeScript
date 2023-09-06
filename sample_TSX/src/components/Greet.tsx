@@ -1,6 +1,6 @@
 type greetType={
     name:string,
-    online:number
+    online?:number //making the online variable optional
 }
 
 export const Greet=(props:greetType)=>{
