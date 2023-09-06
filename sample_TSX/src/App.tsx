@@ -2,6 +2,8 @@
 import { Greet } from "../src/components/Greet.tsx"; 
 import { Person } from "../src/components/Person.tsx"; 
 import './App.css'
+import { Heading } from "./components/Heading.tsx";
+import Oscar from "./components/Oscar.tsx";
 import Status from "./components/Status.tsx";
 import PersonList from "./components/personList.tsx";
 
@@ -32,6 +34,12 @@ function App() {
       <Person personName={name}></Person>
       <PersonList name={personList}></PersonList>
       <Status status="success"></Status>
+      <Heading>TODAY'S NEWS</Heading>
+      <Oscar>
+        <Heading>
+          Oscar Goes to Di Caprio
+        </Heading>
+      </Oscar>
     </>
   )}
 
