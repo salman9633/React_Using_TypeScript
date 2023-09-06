@@ -1,5 +1,5 @@
-type statusProp={
-    status:string
+type statusProp={//Using UNION : so here you can only pass either of this three values through the status else it will show error 
+    status:'loading'|"success"|'error'
 }
 
 function Status(props:statusProp) {

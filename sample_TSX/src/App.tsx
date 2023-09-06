@@ -31,7 +31,7 @@ function App() {
       <Greet name={'Salman Faris'} online={10}></Greet>
       <Person personName={name}></Person>
       <PersonList name={personList}></PersonList>
-      <Status status="error"></Status>
+      <Status status="success"></Status>
     </>
   )}
 
