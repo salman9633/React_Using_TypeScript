@@ -43,6 +43,7 @@ function Basic() {
 
       <Greet name={'Salman'} ></Greet> {/* optional Props */}
       <div>
+
       <Link to="/events">Go to Events Page</Link>
       </div>
     </>
