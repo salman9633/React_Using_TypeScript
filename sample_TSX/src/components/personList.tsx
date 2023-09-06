@@ -5,6 +5,7 @@ type personListType={
     }[]
 }
 
+
 function PersonList(props:personListType) {
   return (
     <div>

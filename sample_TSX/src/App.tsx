@@ -2,6 +2,7 @@
 import { Greet } from "../src/components/Greet.tsx"; 
 import { Person } from "../src/components/Person.tsx"; 
 import './App.css'
+import Status from "./components/Status.tsx";
 import PersonList from "./components/personList.tsx";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Greet name={'Salman Faris'} online={10}></Greet>
       <Person personName={name}></Person>
       <PersonList name={personList}></PersonList>
+      <Status status="error"></Status>
     </>
   )}
 
