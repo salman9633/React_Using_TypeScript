@@ -6,10 +6,15 @@ type counterState = {
     count: number
 }
 
-type counterAction = {
-    type: string
+type updateCounterAction = {
+    type: "incerement" | "decrement"
     payload: number
 }
+type resetCounterAction = {
+    type: "reset"
+
+}
+type counterAction = updateCounterAction | resetCounterAction//discriminated uninion functn
 
 const initialState = { count: 0 }
 
@@ -19,6 +24,8 @@ function reducer(state: counterState, action: counterAction) {
             return { count: state.count + action.payload }
         case "decrement":
             return { count: state.count - action.payload }
+        case "reset":
+            return initialState
         default:
             return state;
     }
@@ -32,14 +39,16 @@ function Counter() {
     return (
         <div>
             <button onClick={() => dispatch({
+                type: 'decrement',
+                payload: 1
+            })}>Decrement</button><button onClick={() => dispatch({
                 type: 'incerement',
                 payload: 1
             })}>Increment</button>
             <div>{state.count}</div>
             <button onClick={() => dispatch({
-                type: 'decrement',
-                payload: 1
-            })}>Decrement</button>
+                type: 'reset'
+            })}> Reset</button>
         </div>
     )
 }
