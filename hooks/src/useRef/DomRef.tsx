@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 
 
 function DomRef() {
-    const inputRef=useRef<HTMLInputElement>(null!)
+    const inputRef=useRef<HTMLInputElement>(null!)//for DOM references refer the HTMLelement Type
     useEffect(()=>{
         inputRef.current.focus()
     },[])

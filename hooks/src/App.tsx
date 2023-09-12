@@ -5,6 +5,7 @@ import { ThemeContextProvider } from './useContext/basic/ThemeContext'
 import User from './useContext/futureVal/User'
 import UserContextProvider from './useContext/futureVal/userContext'
 import Counter from './useReducer/Counter'
+import MutableRef from './useRef/MutableRef'
 import UseStateFutureVal from './useState/UseStateFutureVal'
 import BasicUseState from './useState/basicUseState'
 
@@ -26,6 +27,8 @@ function App() {
       <UserContextProvider>
         <User></User>
       </UserContextProvider>
+      <hr />
+      <MutableRef></MutableRef>
     </>
   )
 
